@@ -7,12 +7,14 @@
 
 @import Cocoa;
 #import "TeaSpoon-Swift.h"
+#import "GLRendererOverrider.h"
 #import "objc/runtime.h"
 
 @implementation NSWindow(TeaSpoon_Swizzle)
 -(NSButton*)swizzled_standardWindowButton:(NSWindowButton)b {
-    NSLog(@"[TeaSpoon] standardWindowButton: called with %lu", (unsigned long)b);
+//    NSLog(@"[TeaSpoon] standardWindowButton: called with %lu", (unsigned long)b);
     if ([TeaSpoon.shared checkWindowIsEmulatorMainWindow: self]) {
+        teaspoonOverrideGLRendererString();
         // force enable full screen
         // buggy but better than nothing
         self.collectionBehavior |= NSWindowCollectionBehaviorFullScreenPrimary;

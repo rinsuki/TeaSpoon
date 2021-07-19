@@ -7,5 +7,10 @@
 
 // Configuration settings file format documentation can be found at:
 // https://help.apple.com/xcode/#/dev745c5c974
+
+// This is Android Emulator and TeaSpoon itself settings used when running the emulator from Xcode.
+// If you just build the library, you don't need to edit this file.
+// Dont commit changes to this file (without add new values)!
 AVD_DEVICE_NAME = "Pixel2_Android11";
 EMULATOR_ADDITIONAL_OPTIONS = -verbose -no-snapshot -verbose -writable-system;
+TEASPOON_ENABLE_OVERRIDE_GL_RENDERER = NO;

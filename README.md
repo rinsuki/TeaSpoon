@@ -6,6 +6,7 @@ Tweaks for macOS version of Android Emulator.
 
 - Force enables traffic lights and fullscreen (but buggy)
 - Chroma Key
+- Overrides OpenGL Renderer Name (GPU name) (Disabled by default)
 
 ## Acknowledgements
 

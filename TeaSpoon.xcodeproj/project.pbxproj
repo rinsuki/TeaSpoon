@@ -13,6 +13,8 @@
 		CEADCF5526A512290014D6DC /* Ikemen in Frameworks */ = {isa = PBXBuildFile; productRef = CEADCF5426A512290014D6DC /* Ikemen */; };
 		CEADCF5726A513800014D6DC /* ChromaKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEADCF5626A513800014D6DC /* ChromaKey.swift */; };
 		CECF9B6126A5727300EFBCE3 /* ChromaKeyManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = CECF9B6026A5727300EFBCE3 /* ChromaKeyManager.swift */; };
+		CECF9B6326A5F2F100EFBCE3 /* GLRendererOverrider.m in Sources */ = {isa = PBXBuildFile; fileRef = CECF9B6226A5F2F100EFBCE3 /* GLRendererOverrider.m */; };
+		CECF9B6626A5F39600EFBCE3 /* NativeFunctionOverrideHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = CECF9B6526A5F39600EFBCE3 /* NativeFunctionOverrideHelper.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +28,9 @@
 		CEADCF5626A513800014D6DC /* ChromaKey.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChromaKey.swift; sourceTree = "<group>"; };
 		CEADCF5826A518690014D6DC /* TeaSpoon.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = TeaSpoon.xcconfig; sourceTree = "<group>"; };
 		CECF9B6026A5727300EFBCE3 /* ChromaKeyManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChromaKeyManager.swift; sourceTree = "<group>"; };
+		CECF9B6226A5F2F100EFBCE3 /* GLRendererOverrider.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GLRendererOverrider.m; sourceTree = "<group>"; };
+		CECF9B6426A5F2FB00EFBCE3 /* GLRendererOverrider.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GLRendererOverrider.h; sourceTree = "<group>"; };
+		CECF9B6526A5F39600EFBCE3 /* NativeFunctionOverrideHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NativeFunctionOverrideHelper.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +68,9 @@
 			isa = PBXGroup;
 			children = (
 				CE786B7126A4CA47000BA5F0 /* main.m */,
+				CECF9B6226A5F2F100EFBCE3 /* GLRendererOverrider.m */,
+				CECF9B6426A5F2FB00EFBCE3 /* GLRendererOverrider.h */,
+				CECF9B6526A5F39600EFBCE3 /* NativeFunctionOverrideHelper.swift */,
 				CE786B7926A4E881000BA5F0 /* TeaSpoon.swift */,
 				CECF9B6026A5727300EFBCE3 /* ChromaKeyManager.swift */,
 				CEADCF5626A513800014D6DC /* ChromaKey.swift */,
@@ -147,6 +155,8 @@
 			files = (
 				CE786B7C26A4ECF4000BA5F0 /* ChromaKeyFilter.swift in Sources */,
 				CEADCF5726A513800014D6DC /* ChromaKey.swift in Sources */,
+				CECF9B6326A5F2F100EFBCE3 /* GLRendererOverrider.m in Sources */,
+				CECF9B6626A5F39600EFBCE3 /* NativeFunctionOverrideHelper.swift in Sources */,
 				CECF9B6126A5727300EFBCE3 /* ChromaKeyManager.swift in Sources */,
 				CE786B7A26A4E881000BA5F0 /* TeaSpoon.swift in Sources */,
 				CE786B7226A4CA47000BA5F0 /* main.m in Sources */,

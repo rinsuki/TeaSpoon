@@ -71,6 +71,11 @@
             value = "$(CODESIGNING_FOLDER_PATH)"
             isEnabled = "YES">
          </EnvironmentVariable>
+         <EnvironmentVariable
+            key = "TEASPOON_ENABLE_OVERRIDE_GL_RENDERER"
+            value = "$TEASPOON_ENABLE_OVERRIDE_GL_RENDERER"
+            isEnabled = "YES">
+         </EnvironmentVariable>
       </EnvironmentVariables>
    </LaunchAction>
    <ProfileAction
