@@ -46,11 +46,13 @@ import Ikemen
     
     static var emulatorFilter: CIFilter? {
         didSet {
-            if let layer = emulatorWindow?.contentView?.layer {
+            if let window = emulatorWindow, let layer = window.contentView?.layer {
                 if let filter = emulatorFilter {
                     layer.filters = [filter]
+                    window.hasShadow = false
                 } else {
                     layer.filters = []
+                    window.hasShadow = true
                 }
             }
         }
