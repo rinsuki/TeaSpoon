@@ -12,7 +12,7 @@
 @implementation NSWindow(TeaSpoon_Swizzle)
 -(NSButton*)swizzled_standardWindowButton:(NSWindowButton)b {
     NSLog(@"[TeaSpoon] standardWindowButton: called with %lu", (unsigned long)b);
-    if ([TeaSpoon checkWindowIsEmulatorMainWindow: self]) {
+    if ([TeaSpoon.shared checkWindowIsEmulatorMainWindow: self]) {
         // force enable full screen
         // buggy but better than nothing
         self.collectionBehavior |= NSWindowCollectionBehaviorFullScreenPrimary;

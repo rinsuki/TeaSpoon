@@ -12,6 +12,7 @@
 		CE786B7C26A4ECF4000BA5F0 /* ChromaKeyFilter.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE786B7B26A4ECF4000BA5F0 /* ChromaKeyFilter.swift */; };
 		CEADCF5526A512290014D6DC /* Ikemen in Frameworks */ = {isa = PBXBuildFile; productRef = CEADCF5426A512290014D6DC /* Ikemen */; };
 		CEADCF5726A513800014D6DC /* ChromaKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEADCF5626A513800014D6DC /* ChromaKey.swift */; };
+		CECF9B6126A5727300EFBCE3 /* ChromaKeyManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = CECF9B6026A5727300EFBCE3 /* ChromaKeyManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		CEADCF5226A50FC40014D6DC /* LICENSE */ = {isa = PBXFileReference; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
 		CEADCF5626A513800014D6DC /* ChromaKey.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChromaKey.swift; sourceTree = "<group>"; };
 		CEADCF5826A518690014D6DC /* TeaSpoon.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = TeaSpoon.xcconfig; sourceTree = "<group>"; };
+		CECF9B6026A5727300EFBCE3 /* ChromaKeyManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChromaKeyManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +64,7 @@
 			children = (
 				CE786B7126A4CA47000BA5F0 /* main.m */,
 				CE786B7926A4E881000BA5F0 /* TeaSpoon.swift */,
+				CECF9B6026A5727300EFBCE3 /* ChromaKeyManager.swift */,
 				CEADCF5626A513800014D6DC /* ChromaKey.swift */,
 				CEADCF5026A50D750014D6DC /* Bridging-Header.h */,
 				CE786B7B26A4ECF4000BA5F0 /* ChromaKeyFilter.swift */,
@@ -144,6 +147,7 @@
 			files = (
 				CE786B7C26A4ECF4000BA5F0 /* ChromaKeyFilter.swift in Sources */,
 				CEADCF5726A513800014D6DC /* ChromaKey.swift in Sources */,
+				CECF9B6126A5727300EFBCE3 /* ChromaKeyManager.swift in Sources */,
 				CE786B7A26A4E881000BA5F0 /* TeaSpoon.swift in Sources */,
 				CE786B7226A4CA47000BA5F0 /* main.m in Sources */,
 			);
