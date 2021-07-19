@@ -1,0 +1,354 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 52;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		CE786B7226A4CA47000BA5F0 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = CE786B7126A4CA47000BA5F0 /* main.m */; };
+		CE786B7A26A4E881000BA5F0 /* TeaSpoon.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE786B7926A4E881000BA5F0 /* TeaSpoon.swift */; };
+		CE786B7C26A4ECF4000BA5F0 /* ChromaKeyFilter.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE786B7B26A4ECF4000BA5F0 /* ChromaKeyFilter.swift */; };
+		CEADCF5526A512290014D6DC /* Ikemen in Frameworks */ = {isa = PBXBuildFile; productRef = CEADCF5426A512290014D6DC /* Ikemen */; };
+		CEADCF5726A513800014D6DC /* ChromaKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEADCF5626A513800014D6DC /* ChromaKey.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		CE786B6C26A4CA47000BA5F0 /* libTeaSpoon.dylib */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.dylib"; includeInIndex = 0; path = libTeaSpoon.dylib; sourceTree = BUILT_PRODUCTS_DIR; };
+		CE786B7126A4CA47000BA5F0 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		CE786B7926A4E881000BA5F0 /* TeaSpoon.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeaSpoon.swift; sourceTree = "<group>"; };
+		CE786B7B26A4ECF4000BA5F0 /* ChromaKeyFilter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChromaKeyFilter.swift; sourceTree = "<group>"; };
+		CEADCF5026A50D750014D6DC /* Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Bridging-Header.h"; sourceTree = "<group>"; };
+		CEADCF5126A50E2F0014D6DC /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		CEADCF5226A50FC40014D6DC /* LICENSE */ = {isa = PBXFileReference; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		CEADCF5626A513800014D6DC /* ChromaKey.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChromaKey.swift; sourceTree = "<group>"; };
+		CEADCF5826A518690014D6DC /* TeaSpoon.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = TeaSpoon.xcconfig; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		CE786B6A26A4CA47000BA5F0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CEADCF5526A512290014D6DC /* Ikemen in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		CE786B6326A4CA47000BA5F0 = {
+			isa = PBXGroup;
+			children = (
+				CEADCF5126A50E2F0014D6DC /* README.md */,
+				CEADCF5226A50FC40014D6DC /* LICENSE */,
+				CEADCF5826A518690014D6DC /* TeaSpoon.xcconfig */,
+				CE786B6E26A4CA47000BA5F0 /* TeaSpoon */,
+				CE786B6D26A4CA47000BA5F0 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		CE786B6D26A4CA47000BA5F0 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CE786B6C26A4CA47000BA5F0 /* libTeaSpoon.dylib */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CE786B6E26A4CA47000BA5F0 /* TeaSpoon */ = {
+			isa = PBXGroup;
+			children = (
+				CE786B7126A4CA47000BA5F0 /* main.m */,
+				CE786B7926A4E881000BA5F0 /* TeaSpoon.swift */,
+				CEADCF5626A513800014D6DC /* ChromaKey.swift */,
+				CEADCF5026A50D750014D6DC /* Bridging-Header.h */,
+				CE786B7B26A4ECF4000BA5F0 /* ChromaKeyFilter.swift */,
+			);
+			path = TeaSpoon;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		CE786B6826A4CA47000BA5F0 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		CE786B6B26A4CA47000BA5F0 /* TeaSpoon */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CE786B7526A4CA47000BA5F0 /* Build configuration list for PBXNativeTarget "TeaSpoon" */;
+			buildPhases = (
+				CE786B6826A4CA47000BA5F0 /* Headers */,
+				CE786B6926A4CA47000BA5F0 /* Sources */,
+				CE786B6A26A4CA47000BA5F0 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TeaSpoon;
+			packageProductDependencies = (
+				CEADCF5426A512290014D6DC /* Ikemen */,
+			);
+			productName = TeaSpoon;
+			productReference = CE786B6C26A4CA47000BA5F0 /* libTeaSpoon.dylib */;
+			productType = "com.apple.product-type.library.dynamic";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		CE786B6426A4CA47000BA5F0 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1250;
+				TargetAttributes = {
+					CE786B6B26A4CA47000BA5F0 = {
+						CreatedOnToolsVersion = 12.5;
+						LastSwiftMigration = 1250;
+					};
+				};
+			};
+			buildConfigurationList = CE786B6726A4CA47000BA5F0 /* Build configuration list for PBXProject "TeaSpoon" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = CE786B6326A4CA47000BA5F0;
+			packageReferences = (
+				CEADCF5326A512290014D6DC /* XCRemoteSwiftPackageReference "Ikemen" */,
+			);
+			productRefGroup = CE786B6D26A4CA47000BA5F0 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				CE786B6B26A4CA47000BA5F0 /* TeaSpoon */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		CE786B6926A4CA47000BA5F0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CE786B7C26A4ECF4000BA5F0 /* ChromaKeyFilter.swift in Sources */,
+				CEADCF5726A513800014D6DC /* ChromaKey.swift in Sources */,
+				CE786B7A26A4E881000BA5F0 /* TeaSpoon.swift in Sources */,
+				CE786B7226A4CA47000BA5F0 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		CE786B7326A4CA47000BA5F0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 11.3;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		CE786B7426A4CA47000BA5F0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 11.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		CE786B7626A4CA47000BA5F0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = CEADCF5826A518690014D6DC /* TeaSpoon.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 4XKKKM86RN;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				EXECUTABLE_PREFIX = lib;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "TeaSpoon/Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		CE786B7726A4CA47000BA5F0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = CEADCF5826A518690014D6DC /* TeaSpoon.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 4XKKKM86RN;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				EXECUTABLE_PREFIX = lib;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "TeaSpoon/Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		CE786B6726A4CA47000BA5F0 /* Build configuration list for PBXProject "TeaSpoon" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CE786B7326A4CA47000BA5F0 /* Debug */,
+				CE786B7426A4CA47000BA5F0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CE786B7526A4CA47000BA5F0 /* Build configuration list for PBXNativeTarget "TeaSpoon" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CE786B7626A4CA47000BA5F0 /* Debug */,
+				CE786B7726A4CA47000BA5F0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		CEADCF5326A512290014D6DC /* XCRemoteSwiftPackageReference "Ikemen" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/banjun/Ikemen";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.7.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		CEADCF5426A512290014D6DC /* Ikemen */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = CEADCF5326A512290014D6DC /* XCRemoteSwiftPackageReference "Ikemen" */;
+			productName = Ikemen;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = CE786B6426A4CA47000BA5F0 /* Project object */;
+}

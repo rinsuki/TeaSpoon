@@ -1,0 +1,11 @@
+//
+//  TeaSpoon.xcconfig
+//  TeaSpoon
+//
+//  Created by user on 2021/07/19.
+//
+
+// Configuration settings file format documentation can be found at:
+// https://help.apple.com/xcode/#/dev745c5c974
+AVD_DEVICE_NAME = "Pixel2_Android11";
+EMULATOR_ADDITIONAL_OPTIONS = -verbose -no-snapshot -verbose -writable-system;
