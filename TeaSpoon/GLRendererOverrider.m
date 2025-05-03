@@ -13,7 +13,7 @@
 #import "GLRendererOverrider.h"
 
 static const char* getGlRendererString() {
-    return "Adreno (TM) 530";
+    return "Adreno (TM) 650";
 }
 
 #define PAGESIZE (16*1024)
@@ -26,7 +26,7 @@ void teaspoonOverrideGLRendererString() {
         return;
     }
 
-    int libOpenglRenderIndex = [NativeFunctionOverrideHelper.shared isLibraryIsLoadedWithSuffix:@"/libOpenglRender.dylib"];
+    int libOpenglRenderIndex = [NativeFunctionOverrideHelper.shared isLibraryIsLoadedWithSuffix:@"/libgfxstream_backend.dylib"];
     if (libOpenglRenderIndex <= 0) {
         return;
     }
@@ -62,7 +62,32 @@ void teaspoonOverrideGLRendererString() {
         return;
     };
     printf("[TeaSpoon] patch to getGlRendererString is finished!\n");
+#elif defined __arm64__
+    if (mprotect(origPageStart, (origFuncPtr + 16) - origPageStart, PROT_READ | PROT_WRITE) != 0) {
+        printf("[TeaSpoon] mprotect RW fail: %d\n", errno);
+        return;
+    };
+    uint8_t* func = origFuncPtr;
+    // ldr x0, .+8
+    func[0] = 0x40;
+    func[1] = 0x00;
+    func[2] = 0x00;
+    func[3] = 0x58;
+    // br x0
+    func[4] = 0x00;
+    func[5] = 0x00;
+    func[6] = 0x1F;
+    func[7] = 0xD6;
+    // address (will load by ldr)
+    *((uint64_t*)(uint8_t*)(func + 8)) = (uint64_t)getGlRendererString;
+    // write address
+    printf("[TeaSpoon] finish self modifiying, recovery R-X...\n");
+    if (mprotect(origPageStart, (origFuncPtr + 16) - origPageStart, PROT_READ | PROT_EXEC) != 0) {
+        printf("[TeaSpoon] mprotect R-X fail: %d\n", errno);
+        return;
+    };
+    printf("[TeaSpoon] arm64 patch to getGlRendererString is finished!\n");
 #else
-    printf("[TeaSpoon] currently arm64 is not supported\n");
+#error "Unsupported architecture"
 #endif
 }
